@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { HashRouter } from 'react-router-dom';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll'
@@ -45,15 +46,17 @@ class App extends Component {
             })
         return robot.length === 0? <h1>Loading</h1> ://!robot.length
         (
-        <div className='tc'>
-            <h1 className='f1'>ROBOFRIENDS</h1>
-            <SearchBox searchChange={ this.onSearchChange } />
-            <Scroll>
-                <ErrorBoundry>
-                    <CardList robot = { filteredRobots }/>  
-                </ErrorBoundry>
-            </Scroll>
-        </div>
+        <HashRouter basename={process.env.PUBLIC_URL}>    
+            <div className='tc'>
+                <h1 className='f1'>ROBOFRIENDS</h1>
+                <SearchBox searchChange={ this.onSearchChange } />
+                <Scroll>
+                    <ErrorBoundry>
+                         <CardList robot = { filteredRobots }/>  
+                    </ErrorBoundry>
+                </Scroll>
+             </div>
+        </HashRouter>
             );
     }
 } 
