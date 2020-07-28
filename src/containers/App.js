@@ -44,9 +44,8 @@ class App extends Component {
               //includes是一種比較的方式
               //用this.searchfield因為searchfield是state的其中一部分
             })
-        return robot.length === 0? <h1>Loading</h1> ://!robot.length
-        (
-        <HashRouter basename={process.env.PUBLIC_URL}>    
+        return (   
+        <HashRouter basename={process.env.PUBLIC_URL}>     
             <div className='tc'>
                 <h1 className='f1'>ROBOFRIENDS</h1>
                 <SearchBox searchChange={ this.onSearchChange } />
@@ -57,7 +56,7 @@ class App extends Component {
                 </Scroll>
              </div>
         </HashRouter>
-            );
+        );
     }
 } 
 
