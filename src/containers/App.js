@@ -46,7 +46,7 @@ class App extends Component {
         return robot.length === 0? <h1>Loading</h1> ://!robot.length
         (   
             <div className='tc'>
-                <h1 className='f1'>ROBOFRIENDS</h1>
+                <h1 style= {{fontSize: '3em'}}>ROBOFRIENDS</h1>
                 <SearchBox searchChange={ this.onSearchChange } />
                 <Scroll>
                     <ErrorBoundry>
