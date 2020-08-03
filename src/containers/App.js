@@ -28,7 +28,7 @@ class App extends Component {
 
     componentDidMount(){ //make request from API?
         fetch('https://jsonplaceholder.typicode.com/users')
-            .then(response => response.json())
+            .then(function(response) {response.json()})
             .then(user => this.setState({ robot: user}));
     }
 
