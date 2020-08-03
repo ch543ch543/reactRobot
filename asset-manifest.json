@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/reactRobot/static/css/main.e2a6eed5.chunk.css",
-    "main.js": "/reactRobot/static/js/main.ac66ab0a.chunk.js",
-    "main.js.map": "/reactRobot/static/js/main.ac66ab0a.chunk.js.map",
+    "main.js": "/reactRobot/static/js/main.e4ccc9fa.chunk.js",
+    "main.js.map": "/reactRobot/static/js/main.e4ccc9fa.chunk.js.map",
     "runtime-main.js": "/reactRobot/static/js/runtime-main.f6b3dffd.js",
     "runtime-main.js.map": "/reactRobot/static/js/runtime-main.f6b3dffd.js.map",
     "static/css/2.3c03f26f.chunk.css": "/reactRobot/static/css/2.3c03f26f.chunk.css",
     "static/js/2.cab51068.chunk.js": "/reactRobot/static/js/2.cab51068.chunk.js",
     "static/js/2.cab51068.chunk.js.map": "/reactRobot/static/js/2.cab51068.chunk.js.map",
     "index.html": "/reactRobot/index.html",
-    "precache-manifest.7472f118fb81a24f487f9a6b23ab563f.js": "/reactRobot/precache-manifest.7472f118fb81a24f487f9a6b23ab563f.js",
+    "precache-manifest.b4556870f45dafb364a5adb275dd8b0e.js": "/reactRobot/precache-manifest.b4556870f45dafb364a5adb275dd8b0e.js",
     "service-worker.js": "/reactRobot/service-worker.js",
     "static/css/2.3c03f26f.chunk.css.map": "/reactRobot/static/css/2.3c03f26f.chunk.css.map",
     "static/css/main.e2a6eed5.chunk.css.map": "/reactRobot/static/css/main.e2a6eed5.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.3c03f26f.chunk.css",
     "static/js/2.cab51068.chunk.js",
     "static/css/main.e2a6eed5.chunk.css",
-    "static/js/main.ac66ab0a.chunk.js"
+    "static/js/main.e4ccc9fa.chunk.js"
   ]
 }
