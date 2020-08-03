@@ -28,8 +28,9 @@ class App extends Component {
 
     componentDidMount(){ //make request from API?
         fetch('https://jsonplaceholder.typicode.com/users')
-            .then(function(response) {response.json()})
-            .then(user => this.setState({ robot: user}));
+            .then(response => response.json())
+            .then(user => this.setState({ robot: user}))
+            .catch(error => console.error(error));
     }
 
     onSearchChange = (event) =>  {
@@ -38,8 +39,8 @@ class App extends Component {
   
     render() {
         const { robot,searchfield } = this.state;
-        const filteredRobots = robot.filter( robot => {
-            return robot.name.toLowerCase().includes(searchfield.toLowerCase()); //Lowercase的目的是為了消除大小寫而無法比較的因素
+        const filteredRobots = robot.filter( robots => {
+            return robots.name.toLowerCase().includes(searchfield.toLowerCase()); //Lowercase的目的是為了消除大小寫而無法比較的因素
               //includes是一種比較的方式
               //用this.searchfield因為searchfield是state的其中一部分
             })
